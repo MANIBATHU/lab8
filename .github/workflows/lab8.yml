@@ -22,9 +22,9 @@ jobs:
           echo "::add-mask::$api_key"
           echo "Masked key = $api_key"
 
-      - name: Create a warning Log for this message "This is a warning message."
-        run: "::warning::This is a warning message."
-
+      - name: Create a warning log for this message "This is a warning message."
+        run: echo "::warning::This is a warning message."
+      
       - name: Create an error annotation with following parameters, file=app.py line=49 message=nullValue 
         run: echo "::error file=app.py,line=49::nullValue"
 
